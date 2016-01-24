@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat", sans-serif;
+  position: relative; // scrollspy
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+a {
+  transition: color 0.3s;
+  &:hover {
+    transition: color 0.3s;
+  }
+}
+
+.highlighted {
+  color: #ebb129;
+}

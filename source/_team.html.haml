@@ -1,0 +1,28 @@
+.team
+  .container.text-center
+    %h1 3lancers
+    %hr
+    %p
+      We are a group of
+      %span.highlighted three
+      Ruby on Rails developers from Ostrava, Czech Republic.
+    .row
+      .col-md-4.member
+        = image_tag "robert.jpg"
+        %h4 Robert Cigán
+        %p Backend developer which is also taking care of hosting.
+        %a{ href: "https://www.linkedin.com/in/robertcigan", target: "_blank", title: "LinkedIn" }
+          %i.fa.fa-linkedin-square
+      .col-md-4.member
+        = image_tag "martin.jpg"
+        %h4 Martin Hladil
+        %p Backend and frontend developer.
+        %a{ href: "https://www.linkedin.com/in/martinhladil", target: "_blank", title: "LinkedIn" }
+          %i.fa.fa-linkedin-square
+      .col-md-4.member
+        = image_tag "tomas.jpg"
+        %h4 Tomáš Pavelka
+        %p Frontend developer and UX specialist.
+        %a{ href: "https://www.linkedin.com/in/tomaspavelka", target: "_blank", title: "LinkedIn" }
+          %i.fa.fa-linkedin-square
+    %a.button{ href: "#contact", data: { scroll: true }} Work with Us

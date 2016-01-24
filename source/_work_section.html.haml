@@ -1,0 +1,14 @@
+.section{ class: type_class }
+  .front-content
+    .icon
+      %i.fa{ class: { "startup" => "fa-rocket", "web-application" => "fa-cog", "cms" => "fa-pencil-square-o" }[type_class] }
+    %h4= title
+    %h5= type
+  .flip-content
+    %h4= title
+    %p
+      %a{ href: "http://#{address}", target: "_blank" }= address
+    %p
+      = description
+    %p
+      %a{ href: "http://#{client_address}", target: "_blank" }= client

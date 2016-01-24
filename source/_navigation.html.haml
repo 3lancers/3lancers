@@ -1,0 +1,17 @@
+.navigation
+  %nav.navbar.navbar-default
+    .container
+      .navbar-header
+        %button.navbar-toggle.collapsed{ data: { target: "#navbar", toggle: "collapse" }}
+          %i.fa.fa-bars
+        %a.navbar-brand{ href: "home" } 3lancers
+      #navbar.navbar-collapse.collapse
+        %ul.nav.navbar-nav.navbar-right.text-uppercase
+          %li.active
+            %a{ href: "#home", data: { scroll: true }} Home
+          %li.nav-item
+            %a{ href: "#about", data: { scroll: true }} About
+          %li.nav-item
+            %a{ href: "#work", data: { scroll: true }} Work
+          %li.nav-item
+            %a{ href: "#contact", data: { scroll: true }} Contact
