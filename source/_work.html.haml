@@ -1,5 +1,5 @@
 .container
-  %h2 Our Work & Clients
+  %h2 Select Client Projects
   %hr
   .row
     .col-md-4
@@ -20,6 +20,9 @@
       = partial(:work_section, locals: { title: "Brand X T-Shirts", type: "Web Application", type_class: "web-application", address: "brandxtshirts.com", client: "Brand X Custom T-Shirts", client_address: "brandxtshirts.com", description: "T-Shirt orders management application." })
     .col-md-4
       = partial(:work_section, locals: { title: "Byatt Arabians", type: "CMS", type_class: "cms", address: "www.michaelbyatt.com", client: "Knight Media Networks, Inc.", client_address: "kmni.com", description: "Byaat Arabians Farm is the vibrant heart if the arabian industry." })
+    .col-md-12
+      %a#show-more-toggle{ href: "#show-more"} Show More
+  .row#show-more.hidden
     .col-md-4
       = partial(:work_section, locals: { title: "Design Pickle", type: "Startup", type_class: "startup", address: "designpickle.com", client: "Design Pickle", client_address: "designpickle.com", description: "Graphic design service application to manage user accounts and send requests." })
     .col-md-4

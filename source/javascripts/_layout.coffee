@@ -46,7 +46,13 @@ initNumbers = ->
     ,
       offset: "100%"
 
+initWork = ->
+  $("a#show-more-toggle").click ->
+    $("#show-more").removeClass("hidden")
+    $(this).addClass("hidden")
+
 initShrinkableNavigation()
 initSmoothScroll()
 initMap()
 initNumbers()
+initWork()
