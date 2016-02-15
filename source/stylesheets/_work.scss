@@ -61,8 +61,10 @@
       width: 100%;
       z-index: -1;
       .inner-content {
+        left: 0;
         padding: 0 35px;
         position: absolute;
+        right: 0;
         top: 50%;
         transform: translateY(-50%);
         a {
