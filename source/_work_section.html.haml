@@ -1,3 +1,5 @@
+- address ||= nil
+- client_address ||= nil
 .section{ class: type_class }
   .front-content
     .icon
@@ -5,10 +7,15 @@
     %h4= title
     %h5= type
   .flip-content
-    %h4= title
-    %p
-      %a{ href: "http://#{address}", target: "_blank" }= address
-    %p
-      = description
-    %p
-      %a{ href: "http://#{client_address}", target: "_blank" }= client
+    .inner-content
+      %h4= title
+      - if address
+        %p
+          %a{ href: "http://#{address}", target: "_blank", rel: "nofollow" }= address
+      %p
+        = description
+      %p
+        - if client_address
+          %a{ href: "http://#{client_address}", target: "_blank", rel: "nofollow" }= client
+        - else
+          = client

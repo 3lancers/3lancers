@@ -44,7 +44,6 @@
       border-radius: 5px;
       border: 1px solid #eee;
       height: 240px;
-      padding: 30px 35px;
       text-align: center;
       transition: all 0.4s cubic-bezier(0.2, 0.85, 0.4, 1.275);
       h4 {
@@ -61,17 +60,24 @@
       transform: rotateY(-180deg);
       width: 100%;
       z-index: -1;
-      a {
-        color: #ebb129;
-        &:hover {
+      .inner-content {
+        padding: 0 35px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        a {
           color: #ebb129;
+          &:hover {
+            color: #ebb129;
+          }
         }
-      }
-      p {
-        color: #999;
+        p {
+          color: #999;
+        }
       }
     }
     .front-content {
+      padding: 30px 35px;
       .icon {
         border-radius: 50%;
         color: #fff;
@@ -94,6 +100,34 @@
     }
     &:hover .front-content {
       transform: rotateY(-180deg);
+    }
+  }
+  .show-more {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 2s;
+    &.shown {
+      max-height: 5000px;
+      transition: all 2s;
+    }
+  }
+  .show-more-button {
+    border-radius: 999px;
+    border: 2px solid #eee;
+    color: #555;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    padding: 15px 30px 16px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    &:hover {
+      background: #eee;
+      color: #f1c40f;
+      transition: all 0.3s;
     }
   }
 }

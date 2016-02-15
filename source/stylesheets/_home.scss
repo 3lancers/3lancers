@@ -39,6 +39,7 @@
         &.to-stuck.stucked {
           opacity: 1;
           top: 0;
+          transform: translateZ(1000px);
           transition: all 0.3s;
         }
         &.to-stuck {
@@ -75,12 +76,21 @@
     overflow: hidden;
     position: relative;
     h1 {
-      bottom: 80px;
-      color: #fff;
-      right: 50px;
+      margin: 0 30px;
       position: absolute;
-      text-align: right;
-      max-width: 650px;
+      color: #fff;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      @media (min-width: $grid-float-breakpoint) {
+        bottom: 80px;
+        margin-left: 50px;
+        max-width: 650px;
+        right: 50px;
+        text-align: right;
+        top: auto;
+        transform: none;
+      }
     }
     img {
       min-width: 650px;
